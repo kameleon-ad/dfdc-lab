@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dfdc-lab"
+version = "0.1.0"
+description = "Deepfake Detection Lab"
+authors = ["kemeleon-ad <alvindelos439@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+black = "^24.4.2"
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
